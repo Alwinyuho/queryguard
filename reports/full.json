@@ -1,0 +1,89 @@
+{
+  "model": "local:Qwen/Qwen3-4B (4-bit)",
+  "schema": "full",
+  "n": 150,
+  "skipped_gold_failed": [],
+  "first_attempt": {
+    "challenging": {
+      "n": 143,
+      "accuracy": 0.03496503496503497,
+      "ci95": [
+        0.015025500353481137,
+        0.0792366161039805
+      ]
+    },
+    "overall": {
+      "n": 150,
+      "accuracy": 0.04,
+      "ci95": [
+        0.018458908886903574,
+        0.08451453912715763
+      ]
+    },
+    "moderate": {
+      "n": 6,
+      "accuracy": 0.0,
+      "ci95": [
+        0.0,
+        0.3903430336530645
+      ]
+    },
+    "simple": {
+      "n": 1,
+      "accuracy": 1.0,
+      "ci95": [
+        0.20654329147389294,
+        1.0
+      ]
+    }
+  },
+  "with_repair": {
+    "challenging": {
+      "n": 143,
+      "accuracy": 0.04195804195804196,
+      "ci95": [
+        0.01936911089693883,
+        0.08851312411003467
+      ]
+    },
+    "overall": {
+      "n": 150,
+      "accuracy": 0.04666666666666667,
+      "ci95": [
+        0.02278625890187786,
+        0.09318757392357377
+      ]
+    },
+    "moderate": {
+      "n": 6,
+      "accuracy": 0.0,
+      "ci95": [
+        0.0,
+        0.3903430336530645
+      ]
+    },
+    "simple": {
+      "n": 1,
+      "accuracy": 1.0,
+      "ci95": [
+        0.20654329147389294,
+        1.0
+      ]
+    }
+  },
+  "first_attempt_status": {
+    "error": 44,
+    "ok": 93,
+    "empty": 9,
+    "guard_blocked": 4
+  },
+  "final_status": {
+    "ok": 114,
+    "empty": 12,
+    "error": 21,
+    "guard_blocked": 3
+  },
+  "mean_llm_calls": 1.6666666666666667,
+  "seconds_per_question": 55.462946132666644,
+  "hardware": "RTX 5050 Laptop GPU 8 GB, batched greedy decoding"
+}
